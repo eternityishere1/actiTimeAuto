@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="60.240889">
+    <testcase classname="Create Customer And Delete Customer" name="Create Customer without Importing" time="42.216767">
+        <failure message="junit.framework.ComparisonFailure: expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.synechron.bdd.actitime.pom.page.DashboardPage.verifyDashBoardTitle(DashboardPage.java:43)&#13;&#10;&#9;at com.synechron.bdd.actitime.pom.stepdef.Steps.i_should_be_able_to_see_home_page(Steps.java:84)&#13;&#10;&#9;at ✽.Then I should be able to see home page(src/test/java/features/createCustomerUsingPOM.feature:25)&#13;&#10;">
+            <![CDATA[Given User is on Actitime Login Page........................................passed
+When I enter valid user name and password...................................passed
+Then I should be able to see home page......................................failed
+When I click on Task Link and Add New Button................................skipped
+Then I should be able to see New Customer Button............................skipped
+And I click on New Customer Button..........................................skipped
+Then I should be able to enter "BDD-Cucumber-Cus1111" and "BDD-Cucumber-Cust-Desc10".skipped
+And I validate Success Message..............................................skipped
+Then I should be able to logout of the application..........................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.synechron.bdd.actitime.pom.page.DashboardPage.verifyDashBoardTitle(DashboardPage.java:43)
+	at com.synechron.bdd.actitime.pom.stepdef.Steps.i_should_be_able_to_see_home_page(Steps.java:84)
+	at ✽.Then I should be able to see home page(src/test/java/features/createCustomerUsingPOM.feature:25)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Create Customer And Delete Customer" name="Delete Customer which is Created" time="18.024122">
+        <failure message="junit.framework.ComparisonFailure: expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.synechron.bdd.actitime.pom.page.DashboardPage.verifyDashBoardTitle(DashboardPage.java:43)&#13;&#10;&#9;at com.synechron.bdd.actitime.pom.stepdef.Steps.i_should_be_able_to_see_home_page(Steps.java:84)&#13;&#10;&#9;at ✽.Then I should be able to see home page(src/test/java/features/createCustomerUsingPOM.feature:25)&#13;&#10;">
+            <![CDATA[Given User is on Actitime Login Page........................................passed
+When I enter valid user name and password...................................passed
+Then I should be able to see home page......................................failed
+When I click on Task Link...................................................skipped
+Then I should be able to Search a customer "BDD-Cucumber-Cus1111"...........skipped
+When I click on settings Icon next to Customer name.........................skipped
+Then I should see Customer details Section..................................skipped
+And I click on actions and delete button....................................skipped
+Then I should prompt popup..................................................skipped
+And I click on delete Permanently button....................................skipped
+And I verify success message................................................skipped
+Then Logout of application..................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.synechron.bdd.actitime.pom.page.DashboardPage.verifyDashBoardTitle(DashboardPage.java:43)
+	at com.synechron.bdd.actitime.pom.stepdef.Steps.i_should_be_able_to_see_home_page(Steps.java:84)
+	at ✽.Then I should be able to see home page(src/test/java/features/createCustomerUsingPOM.feature:25)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
